@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KOZBOTIX Legal Documents - Access our Privacy Policy and Terms of Service.">
+    <title>Legal Documents - KOZBOTIX</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 50px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+        
+        .legal-links {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .legal-link {
+            display: block;
+            padding: 25px 40px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8eaf6 100%);
+            border: 2px solid #e8eaf6;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.4rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .legal-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: left 0.3s ease;
+            z-index: 0;
+        }
+        
+        .legal-link:hover::before {
+            left: 0;
+        }
+        
+        .legal-link span {
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+        }
+        
+        .legal-link:hover span {
+            color: white;
+        }
+        
+        .legal-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 15px 30px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .back-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #f1f3f4;
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 40px 30px;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .legal-link {
+                padding: 20px 30px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Legal Documents</h1>
+            <p>Access our Privacy Policy and Terms of Service to understand how we protect your data and outline our service agreements.</p>
+        </div>
+        
+        <div class="legal-links">
+            <a href="/privacy.html" class="legal-link">
+                <span>🔒 Privacy Policy</span>
+            </a>
+            <a href="/terms.html" class="legal-link">
+                <span>📋 Terms of Service</span>
+            </a>
+        </div>
+        
+        <a href="https://sms.kozbotix.com" class="back-link">← Back to SMS Disclosure</a>
+        
+        <div class="footer">
+            <p>&copy; 2025 KOZBOTIX. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
